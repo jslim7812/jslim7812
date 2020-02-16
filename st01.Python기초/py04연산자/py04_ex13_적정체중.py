@@ -11,3 +11,19 @@
 # prompt를 이용하여 3번 값을 입력 받는다. 입력 받은 신장과 체중은 숫자로 형변환 한다.
 # 표준 출력을 이용하여 결과를 화면에 출력한다.
 
+name = input("이름:")
+h = input("신장:")
+w = input("체중:")
+h=float(h)
+w=float(w)
+
+a=(h-100)*0.9
+a=float(a)
+
+print ("정적체중:", a,"kg")
+
+if a-5<=w<=a+5:
+    print(name, "님은 적정 체중입니다.")
+else:
+    print(name, "님은 적정 체중이 아닙니다.")
+
