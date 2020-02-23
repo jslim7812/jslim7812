@@ -3,3 +3,9 @@
 #     int("안녕하세요")
 # ValueError: invalid literal for int() with base 10: "안녕하세요"
 
+str="abc"
+while True:
+    try:
+        a = int(str)
+    except ValueError:
+        break

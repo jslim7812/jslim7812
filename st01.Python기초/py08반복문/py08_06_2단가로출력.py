@@ -3,7 +3,10 @@
 # 힌트. 출력할 문자열을 변수에 저장하고 마지막 한번만 변수값을 print()를 사용하야 출력해야 한다.
 
 for x in range(1, 10, 1):
-    str="2*%s=%2s" % (x, 2*x)
+    str = "2*%s=%2s" % (x, 2*x)
 
     # x가 9이면 마침표, 아니면 콤마
-    
+    if x < 9:
+        print(str, end=",")
+    else:
+        print(str, end=".")

@@ -1,9 +1,3 @@
-
-# 내장함수
-
-# 사용자함수
-
-
 def get_sum(x, y):
     sum = 0
     for i in range(x, y+1, 1):
@@ -14,6 +8,13 @@ def get_sum(x, y):
     return sum
 
 
-sum1 = get_sum(1, 10)
-sum2 = get_sum(1, 100)
-sum3 = get_sum(100, sum2)
+# 함수 호출
+a = 3
+b = 7
+get_sum(a, b)
+
+
+#  변수의 종류
+# 전역 변수 : a, b => 함수에서 접근이 가능하다.
+# 지역 변수 : i, sum, x, y
+# 매개 변수 : x, y

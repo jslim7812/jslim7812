@@ -1,3 +1,4 @@
+#예외를 강제로 발생시킨다. (예외를 던진다.)
 
 
 # An exception flew by!

@@ -10,3 +10,13 @@
 # **********
 # **********
 # **********
+
+# for 1개를 이용하여 출력
+# for i in range(0,10,1):
+#   print("**********")
+
+# for 2개를 이용하여 출력
+for i in range(0, 10, 1):
+    for j in range(0, 10-i, 1):
+        print("*", end="")
+    print()
