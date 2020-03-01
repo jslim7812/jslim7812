@@ -34,8 +34,10 @@ if idx != -1:
     dog = prov[idx:idx+3]
     print(dog)
 
-# 문자열 추출:
+# 문자열 추출:\
 # "A barking dog"에서 마지막 g 빼고 "A barking do" 를 출력하시오.
 
+prov="A barking dog"
+print(prov[:10])
 
 # 첫번째 b 문자를 찾고 출력하시오.

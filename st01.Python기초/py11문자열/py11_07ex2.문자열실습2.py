@@ -12,7 +12,16 @@
 # d. 정수리스트에서 최대값을 찾는다.
 temp3 = "74 874 9883 73 9 73646 774"
 array1 = temp3.strip().split(" ")
-print(array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
+print(type(array1), array1)  # ['74', '874', '9883', '73', '9', '73646', '774']
+
+print(array1[0], type(array1[0]))
+print(array1[1], type(array1[2]))
+print(array1[2], type(array1[2]))
+
+for i in range(0, len(array1), 1):
+    array1[i]=int(array1[i])
+print (type(array1), array1)
+
 
 array2 = []
 for n in array1:
@@ -20,3 +29,8 @@ for n in array1:
     array2.append(n)
 
 print(array2)  # [74, 874, 9883, 73, 9, 73646, 774]
+print(sorted(array2))
+print(max(array2))
+
+if __name__=="__name__":
+    main()

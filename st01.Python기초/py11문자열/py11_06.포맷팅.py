@@ -20,6 +20,7 @@
 
 # 문자열 포매팅
 "I eat %d apples." % 3
+print("I eat %d apples." % (3)) # (), 튜플
 'I eat 3 apples.'
 
 number = 10

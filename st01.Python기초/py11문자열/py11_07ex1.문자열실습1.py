@@ -14,17 +14,23 @@ print("prove 문자열 길이:", length)
 
 
 # 첫번째 b 문자를 찾고 위치를 출력하시오.
+# 위치 찾는 메서드 : fine(), index() #index는 없을 때 에러발생
 pos1 = prov.find("b")
-print("첫번째 b 문자의 위치는:", pos1)
+print("첫번째 b 문자의 위치는:", pos1)  # 있으면 0이나 양수, 없으면 -1
 
 
 # 문자열에 "Dog"가 있으면 "Dog있음"을 없으면 "Dog없음" 을 출력하시오
 # "Dog 있음"
+if pos1 == -1:
+    print("Dog없음")
+else:
+    print("Dog있음")
 
 
 # 문자열 치환: replace()
 # prov 문자열에 Dog가 들어 있으면 Cat으로 바꾸어 출력하고
 # 아니면 prov 출력하시오.
+
 if prov.find("Dag") >= 0:
     s07 = prov.replace("Dog", "Cat")
     print(s07)
@@ -34,5 +40,6 @@ else:
 
 # 문자열 prov 를 공백을 기준으로 자르고 그 결과를 출력하시오.
 arr = prov.split(" ")
+print(type(arr), arr)
 for i in arr:
     print(i, end=", ")

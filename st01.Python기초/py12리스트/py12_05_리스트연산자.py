@@ -23,3 +23,10 @@
 
 # del 연산자 : 리스트 요소 제거
 
+def add(a,b):
+    result = a+b
+    return result
+    add()
+
+a=add(3,4)
+print(a)

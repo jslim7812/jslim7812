@@ -1,0 +1,17 @@
+# 클로저 함수
+
+
+def outer_func(tag):  # 1
+    text = "Some test"  # S
+    tag = tag  # 6
+
+    def inner_func(): # 7
+        str="<%s>%s</%s>"%(tag, text, tag) #9
+        return str
+    return inner_func # 8
+
+h1_func = outer_func("h1") # 2
+p_func = outer_func("p") # 3
+
+print(h1_func()) # 4
+print(p_func()) #10

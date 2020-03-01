@@ -7,3 +7,13 @@
 # 6. list에서 마지막 학생 삭제.
 # 7. list에서 0번 값을 출력하시오.
 # 8. 평균을 구하고 출력.
+
+a = []
+s = int(input("학생수를 입력하시오: "))
+for i in range (0,s,1):
+    n=int(input("성적:"))
+    a.append(n)
+    
+print(a)
+print ("합계:", sum(a))
+print("평균:", sum(a)/s)
