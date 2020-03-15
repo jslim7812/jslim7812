@@ -7,3 +7,25 @@
 # 입력 파일에서 한 줄을 읽어서 합계를 계산한다.
 
 # 총매출과 일평균 매출을 출력 파일에 기록한다.
+
+
+# a=open("sales.txt", "w")
+
+# while True:
+    # i=input("일일매출:")
+    # a.write(i)
+##############################
+from tkinter import *
+from tkinter.filedialog import askopenfilename
+from tkinter.filedialog import asksaveasfilename
+
+readFile = askopenfilename()
+
+a = open(readFile, "r")
+b= open("summary.txt", "w")
+sum=0
+avg=0
+for s in a:
+    s=int(s)
+    s=sum+s
+    print(s)

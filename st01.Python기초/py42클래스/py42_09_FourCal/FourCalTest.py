@@ -9,3 +9,16 @@
 
 # 코딩 하기 
 
+import FourCal
+
+
+def main():
+    a=FourCal.FourCal()
+    a.setdata(4,3)
+    print(a.add())
+    print(a.sub())
+    print(a.mul())
+    print(a.div())
+    
+if __name__=="__main__":
+    main()

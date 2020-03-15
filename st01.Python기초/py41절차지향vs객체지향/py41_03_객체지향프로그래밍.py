@@ -27,7 +27,7 @@
 #       박아현  372     93.0
 #       서준서  247     61.75
 
-# 작업 순서 
+# 작업 순서
 # 클래스를 선언합니다.
 # 학생 리스트를을 선언합니다.
 # Student 인스턴스의 속성에 접근하는 방법
@@ -35,4 +35,18 @@
 # 인스턴스 확인하기
 
 
-# 코딩 하기 
+# 코딩 하기
+
+class Student:
+    def __init__(self, name, korean, math, english, science):
+        self.name = name
+        self.korean = korean
+        self.math = math
+        self.english = english
+        self.science = science
+
+def getsum(self):
+    return self.korean+self.math+self.english+self.science
+
+del getavg(self):
+
